@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 500px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .container::after {
+            content: "";
+            display: block;
+            clear: left;
+        }
+
+        .main {
+            width: 500px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        .top-left {
+            background-color: red;
+            width: 250px;
+            height: 100px;
+            float: left;
+        }
+
+        .top-right {
+            background-color: green;
+            width: 250px;
+            height: 100px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    
+
+    <div class="container">
+        <div class="top-left"></div>
+        <div class="top-right"></div>
+        <p>글자가운데정렬</p>
+        <div class="main"></div>
+    </div>
+
+</body>
+
+</html>
